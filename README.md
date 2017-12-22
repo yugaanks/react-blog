@@ -1,4 +1,4 @@
 # react-blog
-portfolio
-npm install
-npm run development
+portfolio  
+npm install  
+npm run development  
