@@ -1,5 +1,5 @@
 {
-  "name": "react-universal-blog",
+  "name": "react-blog",
   "version": "1.0.0",
   "engines": {
     "node": "4.1.2",
@@ -27,8 +27,8 @@
     "webpack-dev-server": "^2.7.1"
   },
   "scripts": {
-    "webpack-dev-server": "cross-env NODE_ENV=development PORT=8080 webpack-dev-server --content-base public/ --hot --inline --devtool inline-source-map --history-api-fallback",
-    "development": "copy views/index.html public/index.html & cross-env NODE_ENV=development webpack & npm run webpack-dev-server"
+    "webpack-dev-server": "NODE_ENV=development PORT=8080 webpack-dev-server --content-base public/ --hot --inline --devtool inline-source-map --history-api-fallback",
+    "development": "cp views/index.html public/index.html && NODE_ENV=development webpack && npm run webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
